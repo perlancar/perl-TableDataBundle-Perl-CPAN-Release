@@ -21,6 +21,8 @@ sub new {
 1;
 # ABSTRACT: CPAN releases (from newest to oldest)
 
+=for Pod::Coverage ^(.+)$
+
 =head1 TABLEDATA NOTES
 
 The data was retrieved from MetaCPAN.
