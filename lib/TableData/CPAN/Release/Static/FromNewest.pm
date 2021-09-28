@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-use parent 'TableData::Munge::Reverse';
+use parent 'TableData::Munge::Concat';
 
 # AUTHORITY
 # DATE
@@ -13,8 +13,12 @@ use parent 'TableData::Munge::Reverse';
 
 sub new {
     my $self = shift;
-    $self->SUPER::new(tabledata => 'CPAN::Release::Static');
-};
+    my @tabledatalist;
+    for my $year (reverse 1995..2021) {
+        push @tabledatalist, "Munge::Reverse=tabledata,CPAN::Release::Static::$year";
+    }
+    $self->SUPER::new(tabledatalist => \@tabledatalist);
+}
 
 # STATS
 
