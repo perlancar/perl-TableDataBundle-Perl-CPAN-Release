@@ -19,7 +19,6 @@ around new => sub {
         my $filename = File::ShareDir::dist_file(
             ($year < 2021 ? 'TableDataBundle-CPAN-Release-Static-Older' : "TableData-CPAN-Release-Static-$year"),
             "$year.csv");
-        }
         push @filenames, $filename;
     }
     $orig->(@_, filenames=>\@filenames);
