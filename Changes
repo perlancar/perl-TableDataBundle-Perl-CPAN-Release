@@ -1,7 +1,7 @@
 0.003   2021-09-28  Released-By: PERLANCAR; Urgency: medium
 
 	- [optimize] Make TableData::CPAN::Release::Static::FromNewest
-	  starts giving first row faster.
+	  start giving first row faster.
 
 
 0.002   2021-09-28  Released-By: PERLANCAR; Urgency: medium
