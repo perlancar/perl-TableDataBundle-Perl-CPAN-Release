@@ -21,4 +21,6 @@ This distribution contains the following L<TableData>:: modules:
 
 L<TableData>
 
+L<TableDataBundle::Perl::Release>
+
 =cut
