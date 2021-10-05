@@ -1,6 +1,6 @@
 # no code
 ## no critic: TestingAndDebugging::RequireUseStrict
-package TableDataBundle::CPAN::Release;
+package TableDataBundle::Perl::CPAN::Release;
 
 # AUTHORITY
 # DATE

@@ -1,4 +1,4 @@
-package TableData::CPAN::Release::Static::FromNewest;
+package TableData::Perl::CPAN::Release::Static::FromNewest;
 
 use 5.010001;
 use strict;
@@ -15,7 +15,7 @@ sub new {
     my $self = shift;
     my @tabledatalist;
     for my $year (reverse 1995..2021) {
-        push @tabledatalist, "Munge::Reverse=tabledata,CPAN::Release::Static::$year";
+        push @tabledatalist, "Munge::Reverse=tabledata,Perl::CPAN::Release::Static::$year";
     }
     $self->SUPER::new(tabledatalist => \@tabledatalist);
 }

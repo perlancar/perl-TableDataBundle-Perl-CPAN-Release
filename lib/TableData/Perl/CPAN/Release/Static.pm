@@ -1,6 +1,6 @@
 package ## no critic: Modules::RequireFilenameMatchesPackage
     # hide from PAUSE
-    TableDataRole::CPAN::Release::Static;
+    TableDataRole::Perl::CPAN::Release::Static;
 
 use 5.010001;
 use strict;
@@ -17,14 +17,14 @@ around new => sub {
     my @filenames;
     for my $year (1995..2021) {
         my $filename = File::ShareDir::dist_file(
-            ($year < 2021 ? 'TableDataBundle-CPAN-Release-Static-Older' : "TableData-CPAN-Release-Static-$year"),
+            ($year < 2021 ? 'TableDataBundle-Perl-CPAN-Release-Static-Older' : "TableData-Perl-CPAN-Release-Static-$year"),
             "$year.csv");
         push @filenames, $filename;
     }
     $orig->(@_, filenames=>\@filenames);
 };
 
-package TableData::CPAN::Release::Static;
+package TableData::Perl::CPAN::Release::Static;
 
 use 5.010001;
 use strict;
@@ -37,7 +37,7 @@ use Role::Tiny::With;
 # DIST
 # VERSION
 
-with 'TableDataRole::CPAN::Release::Static';
+with 'TableDataRole::Perl::CPAN::Release::Static';
 
 # STATS
 
