@@ -14,7 +14,7 @@ use parent 'TableData::Munge::Concat';
 sub new {
     my $self = shift;
     my @tabledatalist;
-    for my $year (reverse 1995..2021) {
+    for my $year (reverse 1995..2022) {
         push @tabledatalist, "Munge::Reverse=tabledata,Perl::CPAN::Release::Static::$year";
     }
     $self->SUPER::new(tabledatalist => \@tabledatalist);
