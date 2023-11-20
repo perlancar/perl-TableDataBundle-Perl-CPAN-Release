@@ -10,6 +10,7 @@ use Role::Tiny;
 with 'TableDataRole::Source::CSVInFiles';
 
 around new => sub {
+    require DateTime;
     require File::ShareDir;
 
     my $orig = shift;
