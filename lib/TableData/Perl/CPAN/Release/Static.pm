@@ -14,8 +14,11 @@ around new => sub {
 
     my $orig = shift;
 
+    my $now = DateTime->now;
+    my $cur_year = $now->year;
+
     my @filenames;
-    for my $year (1995..2022) {
+    for my $year (1995..$cur_year) {
         my $filename = File::ShareDir::dist_file(
             ($year < 2022 ? 'TableDataBundle-Perl-CPAN-Release-Static-Older' : "TableData-Perl-CPAN-Release-Static-$year"),
             "$year.csv");
