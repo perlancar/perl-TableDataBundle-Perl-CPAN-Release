@@ -32,6 +32,7 @@ sub new {
                 $date =~ $re_date or die;
                 my $dt_date = DateTime->new(year=>$1, month=>$2, day=>$3);
                 while (DateTime->compare($dt, $dt_date) < 0) {
+                    # close date gaps with rows of empty groups
                     push @$aoa, [$dt->ymd, []];
                     $dt->add(days => 1);
                 }
