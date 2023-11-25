@@ -1,3 +1,9 @@
+20231120.3  2023-11-25  Released-By: PERLANCAR; Urgency: medium
+
+            - Add tables:
+              Perl::CPAN::Release::Static::Grouped{Weekly,Monthly}.
+
+
 20231120.2  2023-11-25  Released-By: PERLANCAR; Urgency: medium
 
             - Add table: Perl::CPAN::Release::Static::GroupedDaily.
