@@ -46,13 +46,10 @@ sub new {
 # STATS
 
 1;
-# ABSTRACT: CPAN releases (from newest to oldest)
+# ABSTRACT: CPAN releases (grouped daily)
 
 =for Pod::Coverage ^(.+)$
 
 =head1 TABLEDATA NOTES
 
-The data was retrieved from MetaCPAN.
-
-The C<status> column is the status of the release when the row was retrieved
-from MetaCPAN. It is probably not current, so do not use it.
+The data was filtered from L<TableData::Perl::CPAN::Release::Static>.
