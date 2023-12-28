@@ -54,3 +54,8 @@ The data was retrieved from MetaCPAN.
 
 The C<status> column is the status of the release when the row was retrieved from
 MetaCPAN. It is probably not current, so do not use it.
+
+
+=head1 SEE ALSO
+
+L<TableData::Perl::CPAN::Release::Dynamic>
